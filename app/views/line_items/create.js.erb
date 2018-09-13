@@ -1,6 +1,7 @@
-console.info('S');
-// console.info($('#cart tr').length);
-if($('#cart tr').length == 1) { $('#cart').show('blind',2000); }
+// console.info('S');
+$('#notice').hide();
+
+if($('#cart tr').length == 1) { $('#cart').show('blind',1000); }
 
 $('#cart').html("<%=j render(@cart) %>");
 
